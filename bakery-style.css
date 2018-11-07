@@ -1,3 +1,89 @@
+.page-top {
+	color: #4286f4;
+	text-align: center;
+	font-family: arial;
+	padding-top: 25px;
+}
+
+.header {
+	position: relative;
+	top: -25px;
+	text-decoration: underline;
+	letter-spacing: .7px;
+}
+
+.cookie-jar {
+	display: flex;
+	justify-content: center;
+	padding-top: 25px;
+	position: relative;
+}
+
+.cookie-box {
+	cursor: pointer;
+	margin-left: 25px;
+	height: 300px;
+	width: 200px;
+}
+
+.cookie-box:hover {
+	border: 1px solid gray;
+	box-shadow: -.5px .5px .5px .5px gray;
+}
+
+.cookie-box__text {
+	color: #4286f4;
+	text-align: center;
+	font-family: arial;
+	position: relative;
+	left: 5px;
+}
+
 .cookie-image {
 	border-radius: 50%;
+	height: 200px;
+	width: auto;
+}
+
+.cookie-number {
+	font-size: 25px;
+	position: relative;
+	bottom: 20px;
+}
+
+.submit-button {
+	padding-top: 15px;
+	position: absolute;
+	top: 325px;
+	left: 35%;
+}
+
+.reset-button {
+	padding-top: 15px;
+	position: absolute;
+	top: 325px;
+	left: 55%;
+}
+
+.button-style button {
+	height: 34px;
+	width: 145px;
+	padding: 0 16px;
+	border: 1px;
+	margin: 11px 4px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #757575;
+	background-color: #f2f2f2;
+}
+
+.button-style button:hover {	
+	border: .5px solid lightgray;
+	color: black;
+	cursor: pointer;
+	transition-duration: 300ms;
+}
+
+.button-style button:focus {
+	outline: none;
 }

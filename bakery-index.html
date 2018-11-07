@@ -2,16 +2,55 @@
 <html>
 <head>
 	<title>Can't Sleep Cookies</title>
-	<meta charset="utf-8">
 	<link rel="shortcut icon" type="image/png" href="cookie-favicon.png">
 	<link rel="stylesheet" type="text/css" href="bakery-style.css">
-	<script type="text/javascript" src="bakery.js"></script>
-
-
+	<script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-	<input type="image" src="chocolate-image.jpeg" class="chocolate-image cookie-image">
-	<input type="image" src="lemon-image.jpg" class="lemon-image cookie-image">
-	<input type="image" src="sugar-image.jpeg" class="sugar-image cookie-image">
+
+	<div class="page-top">
+		<h1 class="header">Welcome to Can't Sleep Cookies</h1>
+		<p>Please select how many cookies of each flavor you'd like by clicking their picture</p>
+		<p>Each click = 1 cookie</p>
+	</div>
+
+	<div class="cookie-jar">
+		<div class="cookie-box" id="chocolate">
+			<img src="choc.jpg" alt="chocolate cookie" class="cookie-image">
+			<div class="cookie-box__text">
+				<h2 class="cookie-label">Chocolate</h2>
+				<h3 class="cookie-number" id="chocolate-counter"></h3>
+			</div>
+		</div>
+		
+		<div class="cookie-box" id="lemon">
+			<img src="lemon.jpg" alt="Lemon Cookie" class="cookie-image">
+			<div class="cookie-box__text">
+				<h2 class="cookie-label">Lemon</h2>
+				<h3 class="cookie-number" id="lemon-counter"></h3>
+			</div>	
+		</div>
+		
+		<div class="cookie-box" id="sugar">
+			<img src="sugar.jpg" alt="Sugar Cookie" class="cookie-image">
+			<div class="cookie-box__text">
+				<h2 class="cookie-label">Sugar</h2>
+				<h3 class="cookie-number" id="sugar-counter"></h3>
+			</div>
+		</div>
+		
+
+		<div class="submit-button button-style">
+			<button id="submitCookies">Submit Order</button>
+		</div>
+
+		<div class="reset-button button-style">
+			<button id="clearCookies">Reset</button>
+		</div>
+
+	<script type="text/javascript" src="bakery.js"></script>
+	</div>
 </body>
 </html>
